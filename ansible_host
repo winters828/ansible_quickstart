@@ -1,0 +1,6 @@
+myhosts:
+ hosts:
+  my_host_01:
+   ansible_host: 10.20.0.23
+   ansible_user: freeman
+   ansible_password: freeman
