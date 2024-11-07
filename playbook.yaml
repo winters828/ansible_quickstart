@@ -4,23 +4,25 @@
    - name: Ping my hosts
      ansible.builtin.ping:
 
-   - name: Print message
-     ansible.builtin.debug:
-       msg: Hello world
-
-   - name: Update and upgrade apt packages
+   - name: Install SyncThing
      become: true
-     apt:
-       upgrade: yes
-       update_cache: yes
+     roles:
+       - { role: l-p.syncthing }
+#if it works find out how to only do a reboot if it works, if it doesn't fix it
 
-   - name: Reboot the server if a reboot is required
-     become: true
-     ansible.builtin.reboot:
-       connect_timeout: 30
-       reboot_timeout: 30
-       post_reboot_delay: 30
-       test_command: uptime
+#   - name: Update and upgrade apt packages
+#     become: true
+#     apt:
+#       upgrade: yes
+#       update_cache: yes
+
+#   - name: Reboot the server if a reboot is required
+#     become: true
+#     ansible.builtin.reboot:
+#       connect_timeout: 30
+#       reboot_timeout: 30
+#       post_reboot_delay: 30
+#       test_command: uptime
 
 #   - name: Update apt Packages
 #     ansible.builtin.apt:
