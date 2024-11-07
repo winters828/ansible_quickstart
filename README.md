@@ -1,4 +1,7 @@
 # ansible_quickstart
-The video for the other tutorial was informative but almost 5 years old. Some information seems to be dated so this is an attempt at reading through the actual ansible documentation and learning this way.
+This covers the quickstart tutorial found on the ansible redhat website. 
+This will be used just for testing and the bottom of the README.md file will also be occassionally used for testing as well. 
 
+
+Git tests
 Another small change just to see if changing the directory will cause issues while pushing. 
