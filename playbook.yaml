@@ -8,7 +8,8 @@
      become: true
      roles:
        - { role: l-p.syncthing }
-#if it works find out how to only do a reboot if it works, if it doesn't fix it
+
+#if it works find out how to only do a reboot if it works, if it doesn't fix it (adding a hidden line here to see if I can actually push in github)
 
 #   - name: Update and upgrade apt packages
 #     become: true
